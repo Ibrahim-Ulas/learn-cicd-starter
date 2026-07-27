@@ -20,6 +20,9 @@ jobs:
       run: ./scripts/buildprod.sh
 
   gcloud:
+    name: Gcloud CLI
+    runs-on: ubuntu-latest
+
     steps:
     - id: 'auth'
       uses: 'google-github-actions/auth@v2'
